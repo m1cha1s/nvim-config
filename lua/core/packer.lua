@@ -17,7 +17,7 @@ return require('packer').startup(function(use)
   -- Packer can manage itself
   use 'wbthomason/packer.nvim'
 
-  use {
+ use {
 	  'nvim-telescope/telescope.nvim', tag = '0.1.1',
 	  -- or                            , branch = '0.1.x',
 	  requires = { {'nvim-lua/plenary.nvim'} }
@@ -30,8 +30,8 @@ return require('packer').startup(function(use)
 	  run = ':TSUpdate'
   }
 
-  use('mbbill/undotree')
-  use('tpope/vim-fugitive')
+  --use('mbbill/undotree')
+  --use('tpope/vim-fugitive')
 
   use {
 	  'VonHeikemen/lsp-zero.nvim',
