@@ -9,6 +9,8 @@ vim.keymap.set("n", "<leader>cb", function ()
         vim.cmd("!make build") 
     elseif ft == "rust" then
         vim.cmd("!cargo build")
+    elseif ft == "go" then
+        vim.cmd("!go build")
     end
 end)
 vim.keymap.set("n", "<leader>cc", function () 
@@ -17,6 +19,8 @@ vim.keymap.set("n", "<leader>cc", function ()
         vim.cmd("!make clean") 
     elseif ft == "rust" then
         vim.cmd("!cargo clean")
+    elseif ft == "go" then
+        vim.cmd("!go clean")
     end
 end)
 vim.keymap.set("n", "<leader>cr", function () 
@@ -25,6 +29,8 @@ vim.keymap.set("n", "<leader>cr", function ()
         vim.cmd("!make run") 
     elseif ft == "rust" then
         vim.cmd("!cargo run")
+    elseif ft == "go" then
+        vim.cmd("!go run .")
     elseif ft == "python" then
         vim.cmd("!python ./main.py")
     end
